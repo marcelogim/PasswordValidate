@@ -8,7 +8,7 @@ https://github.com/itidigital/backend-challenge
 
 ## Funcionamento
 
-O sistema consiste em validar uma senha em string "password", esta validação se da por meio de um regex e retorna um json se é válido ou não isValid.
+O sistema consiste em validar uma senha em string "password", esta validação se da por meio de um regex e retorna um json, sendo válido ou não "isValid".
 
 ```
 POST /passwordValidate HTTP/1.1
@@ -16,6 +16,18 @@ Host: localhost:5000
 Content-Type: application/json
 {
 	"password" : "Admin@123"
+}
+```
+
+```
+{
+    "isValid": false
+}
+```
+
+```
+{
+    "isValid": true
 }
 ```
 ## Regras
