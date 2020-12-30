@@ -1,5 +1,6 @@
 # PasswordValidate (Versão Alpha)
 Esta API é um validador de senhas baseado no guia Repo do desafio de backend.
+
 https://github.com/itidigital/backend-challenge
 
 ## Documentação da REST API
@@ -35,14 +36,20 @@ Content-Type: application/json
 As regras abaixo foram codificadas para validar senhas e esta refletido no contrato de APIs
 
 1 - Nove ou mais caracteres
+
 2 - Ao menos 1 dígito
+
 3 - Ao menos 1 letra minúscula
+
 4 - Ao menos 1 letra maiúscula
+
 5 - Ao menos 1 caractere especial
+
     Considere como especial os seguintes caracteres: !@#$%^&*()-+
     Não possuir caracteres repetidos dentro do conjunto
 
 ##### InfoContact
 Marcelo França
+
 marcelogim@gmail.com
 
