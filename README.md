@@ -5,7 +5,7 @@ https://github.com/itidigital/backend-challenge
 
 ## Documentação da REST API
 
-Foi utilizando o stoplight para desenho da API, em Open Api 3.0
+Foi utilizando o stoplight para desenho da API, em Open Api 3.0.
 
 [https://github.com/marcelogim/PasswordValidate/blob/main/PasswordValidate.v1.yaml](https://github.com/marcelogim/PasswordValidate/blob/main/PasswordValidate.v1.yaml)
 
@@ -54,7 +54,7 @@ Response false:
 ```
 ## Regras
 
-As regras abaixo foram codificadas para validar senhas e esta refletido no contrato de APIs
+As regras abaixo foram codificadas para validar senhas e esta refletido no contrato de APIs:
 
 1 - Nove ou mais caracteres
 
@@ -68,6 +68,9 @@ As regras abaixo foram codificadas para validar senhas e esta refletido no contr
 
     Considere como especial os seguintes caracteres: !@#$%^&*()-+
     Não possuir caracteres repetidos dentro do conjunto
+    
+ Para construir a aplicação foi utilizando uma REGEXP para validação das regras acima, esta regexp esta representada abaixo e foi escrita em C# - .net Core 3.1.
+ "^(?!.*(.).*\1)(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{9,15}$ 
 
 ## InfoContact
 Marcelo França
