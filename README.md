@@ -14,20 +14,13 @@ O sistema consiste em validar uma senha em string "password", esta validação s
 Request:
 
 ```
-POST /passwordValidate HTTP/1.1
-Host: localhost:5000
-Content-Type: application/json
-{
-    "password" : "Admin@123"
-}
-```
-
-Response false:
-
-```
-{
-    "isValid": false
-}
+curl -X POST \
+  http://localhost:5000/passwordValidate \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -d '{
+	"password" : "Admin@123"
+}'
 ```
 
 Response true:
@@ -35,6 +28,24 @@ Response true:
 ```
 {
     "isValid": true
+}
+```
+
+```
+curl -X POST \
+  http://localhost:5000/passwordValidate \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -d '{
+	"password" : "Admin@122"
+}'
+```
+
+Response false:
+
+```
+{
+    "isValid": false
 }
 ```
 ## Regras
