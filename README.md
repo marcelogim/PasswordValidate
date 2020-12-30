@@ -11,7 +11,7 @@ https://github.com/itidigital/backend-challenge
 
 O sistema consiste em validar uma senha em string "password", esta validação se da por meio de um regex e retorna um json, sendo válido ou não "isValid".
 
-Request:
+Request true:
 
 ```
 curl -X POST \
@@ -30,6 +30,8 @@ Response true:
     "isValid": true
 }
 ```
+
+Request true:
 
 ```
 curl -X POST \
