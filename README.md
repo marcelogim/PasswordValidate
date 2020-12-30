@@ -1,5 +1,5 @@
 # PasswordValidate (Versão Alpha)
-Esta API é um validador de senhas baseado no guia Repo do desafio de backend.
+Esta API é um validador de senhas baseado no guia "Repo do desafio de backend".
 
 https://github.com/itidigital/backend-challenge
 
