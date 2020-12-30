@@ -1634,6 +1634,19 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "PasswordValidate/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/PasswordValidate.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PasswordValidate.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -5643,6 +5656,11 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "PasswordValidate/1.0.0": {
+      "type": "project",
+      "path": "../PasswordValidate/PasswordValidate.csproj",
+      "msbuildProject": "../PasswordValidate/PasswordValidate.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5650,6 +5668,7 @@
       "MSTest.TestAdapter >= 2.1.0",
       "MSTest.TestFramework >= 2.1.0",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
+      "PasswordValidate >= 1.0.0",
       "coverlet.collector >= 1.2.0"
     ]
   },
@@ -5682,7 +5701,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\MARGIME\\source\\repos\\PasswordValidate\\PasswordValidate\\PasswordValidate.csproj": {
+              "projectPath": "C:\\Users\\MARGIME\\source\\repos\\PasswordValidate\\PasswordValidate\\PasswordValidate.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -5722,6 +5745,9 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
