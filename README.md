@@ -5,6 +5,8 @@ https://github.com/itidigital/backend-challenge
 
 ## Documentação da REST API
 
+Foi utilizando o stoplight para desenho da API, em Open Api 3.0
+
 [https://github.com/marcelogim/PasswordValidate/blob/main/PasswordValidate.v1.yaml](https://github.com/marcelogim/PasswordValidate/blob/main/PasswordValidate.v1.yaml)
 
 ## Funcionamento
