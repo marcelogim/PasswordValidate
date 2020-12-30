@@ -15,7 +15,7 @@ POST /passwordValidate HTTP/1.1
 Host: localhost:5000
 Content-Type: application/json
 {
-	"password" : "Admin@123"
+    "password" : "Admin@123"
 }
 ```
 
